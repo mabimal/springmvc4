@@ -57,8 +57,9 @@
 									<td>${emp.name}</td>
 									<td>${emp.age}</td>
 									<td>${emp.salary}</td>
-									<td>${emp.id}</td>
-									<td>${emp.id}</td>
+									<td><a href="<c:url value="editEmployee?id=${emp.id}"/>">Edit</a></td>
+									<td><a href="<c:url value="deleteEmployee?id=${emp.id}"/>">Delete</a></td>
+									
 								</tr>
 							</c:forEach>
 						</tbody>
